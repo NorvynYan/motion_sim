@@ -41,7 +41,8 @@ class LShape(BasePath):
         # 当前位置
         x = state['x']
         y = state['y']
-        
+        if self.current_index >= len(self.path_points) - 2:
+            return None
         # 找目标点索引
         
         # 找目标点只从current_index后面找
