@@ -5,7 +5,7 @@ class Pid(BaseAlgorithm):
     
     def __init__(self):
         
-        self.kp_yaw = 9.0
+        self.kp_yaw = 20.0
         self.kd_yaw = 0.0
         self.kp_d = 0.0
         self.kp_v = 0.5
@@ -51,4 +51,9 @@ class Pid(BaseAlgorithm):
         steering = max(-max_steer, min(max_steer, steering))
         accel    = self.kp_v * e_v  
         
-        return {'steering': steering, 'accel': accel}
+        return {
+            'steering': steering,
+            'accel':    accel,
+            'e_d':      e_d,
+            'e_yaw':    e_yaw
+        }
