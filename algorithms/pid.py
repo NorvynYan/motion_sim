@@ -6,8 +6,8 @@ class Pid(BaseAlgorithm):
     def __init__(self):
         
         self.kp_yaw = 9.0
-        self.kd_yaw = 0.05
-        self.kp_d = 0.01
+        self.kd_yaw = 0.0
+        self.kp_d = 0.0
         self.kp_v = 0.5
         
         self.prev_e_yaw = 0.0
