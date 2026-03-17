@@ -69,7 +69,7 @@ class LShape(BasePath):
         if 1700 <= self.current_index <= 2200:
             ref_v = 2  # 转弯时降速
         else:
-            ref_v = 3.0  # 直线正常速度
+            ref_v = 3  # 直线正常速度
 
         return {'x': target[0], 'y': target[1], 'yaw': yaw, 'v': ref_v}
         return {'x': target[0], 'y': target[1], 'yaw': yaw, 'v': 2.0}

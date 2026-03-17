@@ -5,7 +5,7 @@ class Pid(BaseAlgorithm):
     
     def __init__(self):
         
-        self.kp_yaw = 20.0
+        self.kp_yaw = 15.0
         self.kd_yaw = 0.0
         self.kp_d = 0.0
         self.kp_v = 0.5

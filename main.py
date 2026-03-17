@@ -8,7 +8,7 @@ path  = LShape()
 pid   = Pid()
 vis   = Visualizer(path.path_points)
 
-state      = {'x': 150.0, 'y': 0.0, 'yaw': 0.0, 'v': 0.0}
+state      = {'x': 120.0, 'y': 0.0, 'yaw': 0.0, 'v': 0.0}
 trajectory = []
 
 history = []
